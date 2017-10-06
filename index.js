@@ -13,6 +13,8 @@ function nameToAttributes(list){
   })
 }
 
-function attributesToPhrase(){
-
+function attributesToPhrase(people){
+return people.map(function (person){
+  return `${person.name} is from ${person.hometown}`
+})
 }
