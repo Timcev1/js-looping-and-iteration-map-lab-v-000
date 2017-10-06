@@ -7,9 +7,9 @@ function lowerCaseDrivers(driver){
 
 function nameToAttributes(list){
   return list.map(function (objects) {
-    const objectfirst = objects.split(' ')[0];
-    const objectsecond = objects.split(' ')[1];
-    return {firstName: objectfirst, lastName: objectsecond}
+    const first = objects.split(' ')[0];
+    const last = objects.split(' ')[1];
+    return {firstName: first, lastName: last}
   })
 }
 
